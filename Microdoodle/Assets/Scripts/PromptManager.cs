@@ -16,19 +16,21 @@ public class PromptManager : MonoBehaviour
         SetPrompt();
     }
 
+    //Adding string from static array to list
     void AddList(){
         savedPrompt.AddRange(prompts.promptSentence);
     }
 
+    //Setting the text on the button
     void SetPrompt(){
         foreach (GameObject obj in options){
             GetPrompt();
-            // obj.GetComponent<PromptTrigger>().chosen = true;
             obj.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = newPrompt;
             savedPrompt.RemoveAt(currentPrompt);
         }
     }
 
+    //Get randomized string from list
     void GetPrompt(){
         currentPrompt = Random.Range(0, savedPrompt.Count);
         newPrompt = savedPrompt[currentPrompt];
