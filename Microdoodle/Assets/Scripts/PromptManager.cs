@@ -23,6 +23,7 @@ public class PromptManager : MonoBehaviour
     void SetPrompt(){
         foreach (GameObject obj in options){
             GetPrompt();
+            // obj.GetComponent<PromptTrigger>().chosen = true;
             obj.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = newPrompt;
             savedPrompt.RemoveAt(currentPrompt);
         }
