@@ -7,18 +7,29 @@ public class PromptManager : MonoBehaviour
 {
     public Prompts prompts;
     public GameObject[] options;
+    public List<string> savedPrompt = new();
+    string newPrompt;
+    public int currentPrompt;
 
-    private void Start(){
+    void Start(){
+        AddList();
         SetPrompt();
     }
 
+    void AddList(){
+        savedPrompt.AddRange(prompts.promptSentence);
+    }
+
     void SetPrompt(){
-        for (int i = 0; i < options.Length; i++){
-            options[i].transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = GetPrompt();
+        foreach (GameObject obj in options){
+            GetPrompt();
+            obj.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = newPrompt;
+            savedPrompt.RemoveAt(currentPrompt);
         }
     }
 
-    public string GetPrompt(){
-        return prompts.promptSentence[Random.Range(0, prompts.promptSentence.Length)];
+    void GetPrompt(){
+        currentPrompt = Random.Range(0, savedPrompt.Count);
+        newPrompt = savedPrompt[currentPrompt];
     }
 }
