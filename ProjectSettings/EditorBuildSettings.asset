@@ -6,11 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/DrawScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/PromptScene.unity
+    guid: 34743ebb7858cc94aa7d02bc958f9ced
   - enabled: 1
     path: Assets/Scenes/SelectionScene.unity
     guid: 7ac20625af6ece84eb563b046092f150
+  - enabled: 1
+    path: Assets/Scenes/ImageScene.unity
+    guid: 53fbff9fb66628a4593c2a5807670221
+  - enabled: 1
+    path: Assets/Scenes/DrawScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/EndScene.unity
     guid: a3cd37905fe4f8c47838ce80b0b43dc1

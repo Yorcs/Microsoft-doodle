@@ -572,6 +572,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1300033831}
     m_Modifications:
     - target: {fileID: 1303011808678833413, guid: 19352fb907d7ce046922e0c2bc32858f, type: 3}
+      propertyPath: m_text
+      value: Submit
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303011808678833413, guid: 19352fb907d7ce046922e0c2bc32858f, type: 3}
       propertyPath: m_fontSize
       value: 20
       objectReference: {fileID: 0}
@@ -581,11 +585,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1892187344798123927, guid: 19352fb907d7ce046922e0c2bc32858f, type: 3}
       propertyPath: m_Name
-      value: Button
+      value: Submit Button
       objectReference: {fileID: 0}
     - target: {fileID: 3563771948200496068, guid: 19352fb907d7ce046922e0c2bc32858f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6324992897895520637, guid: 19352fb907d7ce046922e0c2bc32858f, type: 3}
       propertyPath: m_EffectDistance.x
