@@ -9,13 +9,8 @@ using UnityEngine.Networking;
 public class UploadImage : MonoBehaviour
 {
     string path;
-    public RawImage image;
+    public RawImage images;
 
-    private void Awake()
-    {
-        image = GetComponentInChildren<RawImage>();
-    }
-    // Start is called before the first frame update
     void Start()
     {
         OpenExplorer();
@@ -51,7 +46,7 @@ public class UploadImage : MonoBehaviour
         }
         else
         {
-            image.texture = ((DownloadHandlerTexture)request.downloadHandler).texture;
+            images.texture = ((DownloadHandlerTexture)request.downloadHandler).texture;
         }
     }
 }
