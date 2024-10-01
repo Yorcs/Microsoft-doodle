@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/PromptScene.unity
+    path: Assets/Scenes/DEPRECATEDPromptScene.unity
     guid: 34743ebb7858cc94aa7d02bc958f9ced
   - enabled: 1
     path: Assets/Scenes/SelectionScene.unity
